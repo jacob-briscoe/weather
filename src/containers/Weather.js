@@ -2,16 +2,24 @@ import React, {useState} from 'react';
 import * as R from 'ramda';
 import AddCity from '../components/AddCity';
 import CityWeatherList from '../components/CityWeatherList';
+import {getWeather, TEMP, HIGH, LOW} from '../repositories/WeatherMapRepository';
 
 const Weather = () => {
   const [cities, setCities] = useState([]);
 
   const addCityHandler = city =>
     R.pipe(
-      // TODO: get actual weather data, if it doesnt already exist
-      c => ({name: c, temp: 70, high: 75, low: 65}),
-      R.partialRight(R.prepend, [cities]),
-      setCities
+      getWeather,
+      R.otherwise(R.always(unknownReading(city))),
+      R.andThen(d => d.data),
+      R.andThen(d => ({
+        name: city,
+        temp: formatTemp(R.view(TEMP, d)),
+        high: formatTemp(R.view(HIGH, d)),
+        low: formatTemp(R.view(LOW, d))
+      })),
+      R.andThen(R.partialRight(R.prepend, [cities])),
+      R.andThen(setCities)
     )(city);
 
   const removeCityHandler = cityName =>
@@ -37,5 +45,17 @@ const Weather = () => {
     </div>
   );
 };
+
+const unknownReading = city => ({
+  name: city,
+  temp: '--',
+  high: '--',
+  low: '--',
+});
+
+const formatTemp = R.pipe(
+  R.defaultTo(0),
+  Math.round
+);
 
 export default Weather;
