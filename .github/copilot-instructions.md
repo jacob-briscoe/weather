@@ -45,3 +45,8 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Design services around a single responsibility
 - Use the `providedIn: 'root'` option for singleton services
 - Use the `inject()` function instead of constructor injection
+
+## Tooling
+
+- This codebase uses **Vitest** for unit testing. Do not use Jasmine, Jest, or Karma.
+- This codebase uses **Playwright** for end-to-end (e2e) testing. Do not use Cypress or Protractor.
