@@ -1,1 +1,501 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Bricolage Grotesque Variable Font */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf')
+    format('truetype-variations');
+  font-weight: 400 700;
+  font-stretch: 75% 100%;
+  font-optical-sizing: auto;
+  font-display: swap;
+}
+
+/* DM Sans Variable Font */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-weight: 300 700;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-display: swap;
+}
+
+/* DM Sans Italic Variable Font */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf')
+    format('truetype-variations');
+  font-weight: 300 700;
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-display: swap;
+}
+
+:root {
+  /* Color Tokens */
+  --neutral-900: #02012c;
+  --neutral-800: #262540;
+  --neutral-700: #3d2f4a;
+  --neutral-600: #3c385e;
+  --neutral-300: #acac87;
+  --neutral-200: #d4d3d9;
+  --neutral-0: #ffffff;
+  --orange-500: #ff8a0a;
+  --blue-700: #2b1b9c;
+  --blue-500: #4658d9;
+
+  /* Spacing Scale */
+  --spacing-0: 0;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+  --spacing-1200: 96px;
+  --spacing-1400: 112px;
+  --spacing-1600: 128px;
+  --spacing-1800: 140px;
+
+  /* Border Radius */
+  --radius-0: 0;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+
+  /* Font Families */
+  --font-primary: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Font Sizes - Based on the provided design */
+  --fs-display: 52px; /* Bricolage Grotesque Bold */
+  --fs-title-large: 96px; /* DM Sans SemiBold Italic */
+  --fs-title: 32px; /* DM Sans Light */
+  --fs-body-large: 28px; /* DM Sans Bold */
+  --fs-body: 20px; /* DM Sans SemiBold */
+  --fs-body-small: 18px; /* DM Sans Medium */
+  --fs-caption: 16px; /* DM Sans Medium */
+  --fs-small: 14px; /* DM Sans Medium */
+
+  /* Line Heights */
+  --lh-tight: 100%;
+  --lh-normal: 120%;
+}
+
+/* Set default body font */
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-regular);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Color Utility Classes */
+.bg-neutral-900 {
+  background-color: var(--neutral-900);
+}
+.bg-neutral-800 {
+  background-color: var(--neutral-800);
+}
+.bg-neutral-700 {
+  background-color: var(--neutral-700);
+}
+.bg-neutral-600 {
+  background-color: var(--neutral-600);
+}
+.bg-neutral-300 {
+  background-color: var(--neutral-300);
+}
+.bg-neutral-200 {
+  background-color: var(--neutral-200);
+}
+.bg-neutral-0 {
+  background-color: var(--neutral-0);
+}
+.bg-orange-500 {
+  background-color: var(--orange-500);
+}
+.bg-blue-700 {
+  background-color: var(--blue-700);
+}
+.bg-blue-500 {
+  background-color: var(--blue-500);
+}
+
+.text-neutral-900 {
+  color: var(--neutral-900);
+}
+.text-neutral-800 {
+  color: var(--neutral-800);
+}
+.text-neutral-700 {
+  color: var(--neutral-700);
+}
+.text-neutral-600 {
+  color: var(--neutral-600);
+}
+.text-neutral-300 {
+  color: var(--neutral-300);
+}
+.text-neutral-200 {
+  color: var(--neutral-200);
+}
+.text-neutral-0 {
+  color: var(--neutral-0);
+}
+.text-orange-500 {
+  color: var(--orange-500);
+}
+.text-blue-700 {
+  color: var(--blue-700);
+}
+.text-blue-500 {
+  color: var(--blue-500);
+}
+
+/* Spacing Utility Classes */
+.gap-0 {
+  gap: var(--spacing-0);
+}
+.gap-025 {
+  gap: var(--spacing-025);
+}
+.gap-050 {
+  gap: var(--spacing-050);
+}
+.gap-075 {
+  gap: var(--spacing-075);
+}
+.gap-100 {
+  gap: var(--spacing-100);
+}
+.gap-125 {
+  gap: var(--spacing-125);
+}
+.gap-150 {
+  gap: var(--spacing-150);
+}
+.gap-200 {
+  gap: var(--spacing-200);
+}
+.gap-250 {
+  gap: var(--spacing-250);
+}
+.gap-300 {
+  gap: var(--spacing-300);
+}
+.gap-400 {
+  gap: var(--spacing-400);
+}
+.gap-500 {
+  gap: var(--spacing-500);
+}
+.gap-600 {
+  gap: var(--spacing-600);
+}
+.gap-800 {
+  gap: var(--spacing-800);
+}
+.gap-1000 {
+  gap: var(--spacing-1000);
+}
+.gap-1200 {
+  gap: var(--spacing-1200);
+}
+.gap-1400 {
+  gap: var(--spacing-1400);
+}
+.gap-1600 {
+  gap: var(--spacing-1600);
+}
+.gap-1800 {
+  gap: var(--spacing-1800);
+}
+
+.p-0 {
+  padding: var(--spacing-0);
+}
+.p-025 {
+  padding: var(--spacing-025);
+}
+.p-050 {
+  padding: var(--spacing-050);
+}
+.p-075 {
+  padding: var(--spacing-075);
+}
+.p-100 {
+  padding: var(--spacing-100);
+}
+.p-125 {
+  padding: var(--spacing-125);
+}
+.p-150 {
+  padding: var(--spacing-150);
+}
+.p-200 {
+  padding: var(--spacing-200);
+}
+.p-250 {
+  padding: var(--spacing-250);
+}
+.p-300 {
+  padding: var(--spacing-300);
+}
+.p-400 {
+  padding: var(--spacing-400);
+}
+.p-500 {
+  padding: var(--spacing-500);
+}
+.p-600 {
+  padding: var(--spacing-600);
+}
+.p-800 {
+  padding: var(--spacing-800);
+}
+.p-1000 {
+  padding: var(--spacing-1000);
+}
+.p-1200 {
+  padding: var(--spacing-1200);
+}
+.p-1400 {
+  padding: var(--spacing-1400);
+}
+.p-1600 {
+  padding: var(--spacing-1600);
+}
+.p-1800 {
+  padding: var(--spacing-1800);
+}
+
+.m-0 {
+  margin: var(--spacing-0);
+}
+.m-025 {
+  margin: var(--spacing-025);
+}
+.m-050 {
+  margin: var(--spacing-050);
+}
+.m-075 {
+  margin: var(--spacing-075);
+}
+.m-100 {
+  margin: var(--spacing-100);
+}
+.m-125 {
+  margin: var(--spacing-125);
+}
+.m-150 {
+  margin: var(--spacing-150);
+}
+.m-200 {
+  margin: var(--spacing-200);
+}
+.m-250 {
+  margin: var(--spacing-250);
+}
+.m-300 {
+  margin: var(--spacing-300);
+}
+.m-400 {
+  margin: var(--spacing-400);
+}
+.m-500 {
+  margin: var(--spacing-500);
+}
+.m-600 {
+  margin: var(--spacing-600);
+}
+.m-800 {
+  margin: var(--spacing-800);
+}
+.m-1000 {
+  margin: var(--spacing-1000);
+}
+.m-1200 {
+  margin: var(--spacing-1200);
+}
+.m-1400 {
+  margin: var(--spacing-1400);
+}
+.m-1600 {
+  margin: var(--spacing-1600);
+}
+.m-1800 {
+  margin: var(--spacing-1800);
+}
+
+/* Border Radius Utility Classes */
+.radius-0 {
+  border-radius: var(--radius-0);
+}
+.radius-4 {
+  border-radius: var(--radius-4);
+}
+.radius-6 {
+  border-radius: var(--radius-6);
+}
+.radius-8 {
+  border-radius: var(--radius-8);
+}
+.radius-10 {
+  border-radius: var(--radius-10);
+}
+.radius-12 {
+  border-radius: var(--radius-12);
+}
+.radius-16 {
+  border-radius: var(--radius-16);
+}
+.radius-20 {
+  border-radius: var(--radius-20);
+}
+.radius-24 {
+  border-radius: var(--radius-24);
+}
+.radius-full {
+  border-radius: var(--radius-full);
+}
+
+/* Typography Utility Classes */
+.font-primary {
+  font-family: var(--font-primary);
+}
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Font Weight Classes */
+.fw-light {
+  font-weight: var(--fw-light);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+/* Font Size Classes */
+.fs-display {
+  font-size: var(--fs-display);
+} /* 52px Bricolage Grotesque Bold */
+.fs-title-large {
+  font-size: var(--fs-title-large);
+} /* 96px DM Sans SemiBold Italic */
+.fs-title {
+  font-size: var(--fs-title);
+} /* 32px DM Sans Light */
+.fs-body-large {
+  font-size: var(--fs-body-large);
+} /* 28px DM Sans Bold */
+.fs-body {
+  font-size: var(--fs-body);
+} /* 20px DM Sans SemiBold */
+.fs-body-small {
+  font-size: var(--fs-body-small);
+} /* 18px DM Sans Medium */
+.fs-caption {
+  font-size: var(--fs-caption);
+} /* 16px DM Sans Medium */
+.fs-small {
+  font-size: var(--fs-small);
+} /* 14px DM Sans Medium */
+
+/* Line Height Classes */
+.lh-tight {
+  line-height: var(--lh-tight);
+}
+.lh-normal {
+  line-height: var(--lh-normal);
+}
+
+/* Common Typography Combinations */
+.display {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+}
+
+.title-large {
+  font-family: var(--font-primary);
+  font-size: var(--fs-title-large);
+  font-weight: var(--fw-semibold);
+  font-style: italic;
+  line-height: var(--lh-tight);
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-light);
+  line-height: var(--lh-normal);
+}
+
+.body-large {
+  font-family: var(--font-primary);
+  font-size: var(--fs-body-large);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-normal);
+}
+
+.body {
+  font-family: var(--font-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-normal);
+}
+
+.body-small {
+  font-family: var(--font-primary);
+  font-size: var(--fs-body-small);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-normal);
+}
+
+.caption {
+  font-family: var(--font-primary);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-normal);
+}
+
+.small {
+  font-family: var(--font-primary);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-normal);
+}
