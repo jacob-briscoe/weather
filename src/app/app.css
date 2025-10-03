@@ -20,7 +20,7 @@
   padding: var(--spacing-200) var(--spacing-300) var(--spacing-200)
     calc(var(--spacing-300) + 20px + var(--spacing-200));
   background-color: var(--neutral-800);
-  background-image: url('./assets/images/icon-search.svg');
+  background-image: url('/weather/assets/images/icon-search.svg');
   background-repeat: no-repeat;
   background-position: var(--spacing-300) center;
   background-size: 20px;
@@ -62,7 +62,7 @@
   border: none;
   border-radius: var(--radius-8);
   text-align: left;
-  background-image: url('./assets/images/icon-checkmark.svg');
+  background-image: url('/weather/assets/images/icon-checkmark.svg');
   background-repeat: no-repeat;
   background-position: right var(--spacing-100) center;
   background-size: 14px 17px;
