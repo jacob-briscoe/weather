@@ -1,12 +1,13 @@
 :host {
   max-width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--spacing-200);
-  margin-left: var(--spacing-200);
-  margin-right: var(--spacing-200);
+  padding-top: var(--spacing-200);
+  padding-left: var(--spacing-200);
+  padding-right: var(--spacing-200);
+  padding-bottom: var(--spacing-600);
+  /* margin-bottom: var(--spacing-600); */
   /* margin: var(--spacing-200); */
   /* min-width: 343px;
   max-width: 720px; */
