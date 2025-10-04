@@ -109,9 +109,20 @@
   /* Line Heights */
   --lh-tight: 100%;
   --lh-normal: 120%;
+
+  --desktop-breakpoint: 1216px;
+  --tablet-breakpoint: 720px;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
 }
 
 body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
   background-color: var(--neutral-900);
   color: var(--neutral-0);
   font-family: var(--font-primary);
