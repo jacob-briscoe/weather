@@ -26,17 +26,10 @@
   justify-content: space-between;
 }
 
-.logo {
-  height: 28px;
-}
-
 .headline {
   margin-top: var(--spacing-600);
   margin-bottom: var(--spacing-600);
   text-align: center;
-  font-family: var(--font-display);
-  font-weight: var(--fw-bold);
-  font-stretch: 100%;
 }
 
 .main {
@@ -166,7 +159,8 @@
 .units-button {
   display: flex;
   align-items: center;
-  gap: var(--spacing-100);
+  gap: var(--spacing-125);
+  padding-left: 16px;
 }
 
 .hourly-forecast {
@@ -230,13 +224,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.weather-info-location-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-150);
 }
 
 .weather-details-container {
