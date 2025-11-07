@@ -172,10 +172,9 @@
   gap: var(--spacing-200);
   width: 100%;
   border-radius: var(--radius-20);
-  /* padding: var(--spacing-300); */
   padding: var(--spacing-250) var(--spacing-200);
-  min-height: 686px;
   overflow-y: auto;
+  height: 686px;
 }
 
 .hourly-forecast-header {
@@ -297,9 +296,9 @@
 
 .daily-forecast-day-temp-container {
   display: flex;
-  gap: var(--spacing-200);
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .search {
