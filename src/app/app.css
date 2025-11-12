@@ -310,6 +310,8 @@ TODO: Desktop (Laptop L 1440)
 
 .search {
   width: 100%;
+  max-width: 321px;
+
   display: flex;
   flex-direction: column;
   gap: var(--spacing-150);
@@ -334,6 +336,7 @@ TODO: Desktop (Laptop L 1440)
   .search {
     flex-direction: row;
     gap: var(--spacing-200);
+    max-width: 656px;
   }
 
   .weather-info {
@@ -376,7 +379,7 @@ TODO: Desktop (Laptop L 1440)
   }
 
   .search {
-    width: 656px;
+    max-width: 656px;
   }
 
   .weather-info-container {
@@ -388,6 +391,7 @@ TODO: Desktop (Laptop L 1440)
     display: flex;
     gap: var(--spacing-400);
     width: 100%;
+    max-width: 1216px;
   }
 
   .hourly-forecast {
