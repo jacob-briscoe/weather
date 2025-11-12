@@ -14,178 +14,186 @@
   />
   <button class="primary-button search-button text-preset-5 radius-12">Search</button>
 </div>
-<div class="weather-info-container">
-  <div class="weather-info">
-    <div class="weather-info-location-container">
-      <h2 class="text-preset-4">Berlin, Germany</h2>
-      <h3 class="text-preset-6 weather-info-date">Tuesday, Aug 5, 2025</h3>
+<div class="weather-container">
+  <div class="weather-info-container">
+    <div class="weather-info">
+      <div class="weather-info-location-container">
+        <h2 class="text-preset-4">Berlin, Germany</h2>
+        <h3 class="text-preset-6 weather-info-date">Tuesday, Aug 5, 2025</h3>
+      </div>
+      <div class="weather-info-temperature-container">
+        <img src="./assets/images/icon-sunny.webp" alt="Sunny Icon" width="120" height="120" />
+        <h2 class="text-preset-1">20°</h2>
+      </div>
     </div>
-    <div class="weather-info-temperature-container">
-      <img src="./assets/images/icon-sunny.webp" alt="Sunny Icon" width="120" height="120" />
-      <h2 class="text-preset-1">20°</h2>
+    <div class="weather-details-container">
+      <div class="weather-detail-container">
+        <h2 class="weather-detail-label text-preset-6">Feels Like</h2>
+        <h2 class="weather-detail-value text-preset-3">18°</h2>
+      </div>
+      <div class="weather-detail-container">
+        <h2 class="weather-detail-label text-preset-6">Humidity</h2>
+        <h2 class="weather-detail-value text-preset-3">46%</h2>
+      </div>
+      <div class="weather-detail-container">
+        <h2 class="weather-detail-label text-preset-6">Wind</h2>
+        <h2 class="weather-detail-value text-preset-3">14 km/h</h2>
+      </div>
+      <div class="weather-detail-container">
+        <h2 class="weather-detail-label text-preset-6">Precipitation</h2>
+        <h2 class="weather-detail-value text-preset-3">0 mm</h2>
+      </div>
+    </div>
+    <div class="daily-forecast-container">
+      <h2 class="text-preset-5">Daily forecast</h2>
+      <div class="daily-forecast-days-container">
+        <div class="daily-forecast-day-container">
+          <h3 class="text-preset-6">Tue</h3>
+          <img
+            src="./assets/images/icon-overcast.webp"
+            alt="Overcast Icon"
+            width="60"
+            height="60"
+          />
+          <div class="daily-forecast-day-temp-container">
+            <h4 class="text-preset-7">20°</h4>
+            <h4 class="text-preset-7 text-neutral-200">14°</h4>
+          </div>
+        </div>
+        <div class="daily-forecast-day-container">
+          <h3 class="text-preset-6">Wed</h3>
+          <img src="./assets/images/icon-rain.webp" alt="Rain Icon" width="60" height="60" />
+          <div class="daily-forecast-day-temp-container">
+            <h4 class="text-preset-7">21°</h4>
+            <h4 class="text-preset-7 text-neutral-200">15°</h4>
+          </div>
+        </div>
+        <div class="daily-forecast-day-container">
+          <h3 class="text-preset-6">Thu</h3>
+          <img src="./assets/images/icon-sunny.webp" alt="Sunny Icon" width="60" height="60" />
+          <div class="daily-forecast-day-temp-container">
+            <h4 class="text-preset-7">24°</h4>
+            <h4 class="text-preset-7 text-neutral-200">14°</h4>
+          </div>
+        </div>
+        <div class="daily-forecast-day-container">
+          <h3 class="text-preset-6">Fri</h3>
+          <img
+            src="./assets/images/icon-partly-cloudy.webp"
+            alt="Partly Cloudy Icon"
+            width="60"
+            height="60"
+          />
+          <div class="daily-forecast-day-temp-container">
+            <h4 class="text-preset-7">25°</h4>
+            <h4 class="text-preset-7 text-neutral-200">13°</h4>
+          </div>
+        </div>
+        <div class="daily-forecast-day-container">
+          <h3 class="text-preset-6">Sat</h3>
+          <img src="./assets/images/icon-storm.webp" alt="Storm Icon" width="60" height="60" />
+          <div class="daily-forecast-day-temp-container">
+            <h4 class="text-preset-7">21°</h4>
+            <h4 class="text-preset-7 text-neutral-200">15°</h4>
+          </div>
+        </div>
+        <div class="daily-forecast-day-container">
+          <h3 class="text-preset-6">Sun</h3>
+          <img src="./assets/images/icon-snow.webp" alt="Snow Icon" width="60" height="60" />
+          <div class="daily-forecast-day-temp-container">
+            <h4 class="text-preset-7">25°</h4>
+            <h4 class="text-preset-7 text-neutral-200">16°</h4>
+          </div>
+        </div>
+        <div class="daily-forecast-day-container">
+          <h3 class="text-preset-6">Mon</h3>
+          <img src="./assets/images/icon-fog.webp" alt="Fog Icon" width="60" height="60" />
+          <div class="daily-forecast-day-temp-container">
+            <h4 class="text-preset-7">24°</h4>
+            <h4 class="text-preset-7 text-neutral-200">15°</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="weather-details-container">
-    <div class="weather-detail-container">
-      <h2 class="weather-detail-label text-preset-6">Feels Like</h2>
-      <h2 class="weather-detail-value text-preset-3">18°</h2>
+  <div class="hourly-forecast">
+    <div class="hourly-forecast-header">
+      <h2 class="text-preset-5">Hourly forecast</h2>
+      <button class="dropdown-button trigger text-preset-7">Tuesday</button>
     </div>
-    <div class="weather-detail-container">
-      <h2 class="weather-detail-label text-preset-6">Humidity</h2>
-      <h2 class="weather-detail-value text-preset-3">46%</h2>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">3 PM</h3>
+      </div>
+      <h4 class="text-preset-7">20°</h4>
     </div>
-    <div class="weather-detail-container">
-      <h2 class="weather-detail-label text-preset-6">Wind</h2>
-      <h2 class="weather-detail-value text-preset-3">14 km/h</h2>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">4 PM</h3>
+      </div>
+      <h4 class="text-preset-7">20°</h4>
     </div>
-    <div class="weather-detail-container">
-      <h2 class="weather-detail-label text-preset-6">Precipitation</h2>
-      <h2 class="weather-detail-value text-preset-3">0 mm</h2>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">5 PM</h3>
+      </div>
+      <h4 class="text-preset-7">20°</h4>
     </div>
-  </div>
-  <div class="daily-forecast-container">
-    <h2 class="text-preset-5">Daily forecast</h2>
-    <div class="daily-forecast-days-container">
-      <div class="daily-forecast-day-container">
-        <h3 class="text-preset-6">Tue</h3>
-        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="60" height="60" />
-        <div class="daily-forecast-day-temp-container">
-          <h4 class="text-preset-7">20°</h4>
-          <h4 class="text-preset-7 text-neutral-200">14°</h4>
-        </div>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">6 PM</h3>
       </div>
-      <div class="daily-forecast-day-container">
-        <h3 class="text-preset-6">Wed</h3>
-        <img src="./assets/images/icon-rain.webp" alt="Rain Icon" width="60" height="60" />
-        <div class="daily-forecast-day-temp-container">
-          <h4 class="text-preset-7">21°</h4>
-          <h4 class="text-preset-7 text-neutral-200">15°</h4>
-        </div>
+      <h4 class="text-preset-7">20°</h4>
+    </div>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">7 PM</h3>
       </div>
-      <div class="daily-forecast-day-container">
-        <h3 class="text-preset-6">Thu</h3>
-        <img src="./assets/images/icon-sunny.webp" alt="Sunny Icon" width="60" height="60" />
-        <div class="daily-forecast-day-temp-container">
-          <h4 class="text-preset-7">24°</h4>
-          <h4 class="text-preset-7 text-neutral-200">14°</h4>
-        </div>
+      <h4 class="text-preset-7">20°</h4>
+    </div>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">8 PM</h3>
       </div>
-      <div class="daily-forecast-day-container">
-        <h3 class="text-preset-6">Fri</h3>
-        <img
-          src="./assets/images/icon-partly-cloudy.webp"
-          alt="Partly Cloudy Icon"
-          width="60"
-          height="60"
-        />
-        <div class="daily-forecast-day-temp-container">
-          <h4 class="text-preset-7">25°</h4>
-          <h4 class="text-preset-7 text-neutral-200">13°</h4>
-        </div>
+      <h4 class="text-preset-7">20°</h4>
+    </div>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">9 PM</h3>
       </div>
-      <div class="daily-forecast-day-container">
-        <h3 class="text-preset-6">Sat</h3>
-        <img src="./assets/images/icon-storm.webp" alt="Storm Icon" width="60" height="60" />
-        <div class="daily-forecast-day-temp-container">
-          <h4 class="text-preset-7">21°</h4>
-          <h4 class="text-preset-7 text-neutral-200">15°</h4>
-        </div>
+      <h4 class="text-preset-7">20°</h4>
+    </div>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">10 PM</h3>
       </div>
-      <div class="daily-forecast-day-container">
-        <h3 class="text-preset-6">Sun</h3>
-        <img src="./assets/images/icon-snow.webp" alt="Snow Icon" width="60" height="60" />
-        <div class="daily-forecast-day-temp-container">
-          <h4 class="text-preset-7">25°</h4>
-          <h4 class="text-preset-7 text-neutral-200">16°</h4>
-        </div>
+      <h4 class="text-preset-7">20°</h4>
+    </div>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">11 PM</h3>
       </div>
-      <div class="daily-forecast-day-container">
-        <h3 class="text-preset-6">Mon</h3>
-        <img src="./assets/images/icon-fog.webp" alt="Fog Icon" width="60" height="60" />
-        <div class="daily-forecast-day-temp-container">
-          <h4 class="text-preset-7">24°</h4>
-          <h4 class="text-preset-7 text-neutral-200">15°</h4>
-        </div>
+      <h4 class="text-preset-7">20°</h4>
+    </div>
+    <div class="hourly-forecast-item">
+      <div class="hourly-forecast-item-row-header">
+        <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
+        <h3 class="text-preset-5">12 PM</h3>
       </div>
+      <h4 class="text-preset-7">20°</h4>
     </div>
   </div>
 </div>
-<div class="hourly-forecast">
-  <div class="hourly-forecast-header">
-    <h2 class="text-preset-5">Hourly forecast</h2>
-    <button class="dropdown-button trigger text-preset-7">Tuesday</button>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">3 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">4 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">5 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">6 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">7 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">8 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">9 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">10 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">11 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-  <div class="hourly-forecast-item">
-    <div class="hourly-forecast-item-row-header">
-      <img src="./assets/images/icon-overcast.webp" alt="Overcast Icon" width="40" height="40" />
-      <h3 class="text-preset-5">12 PM</h3>
-    </div>
-    <h4 class="text-preset-7">20°</h4>
-  </div>
-</div>
+
 <!-- Orig... Works!!! -->
 <!-- <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 32px">
   <img src="./assets/images/logo.svg" alt="Logo" class="logo" />

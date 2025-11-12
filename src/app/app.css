@@ -1,3 +1,10 @@
+/*
+TODO: Desktop (Laptop L 1440)
+ - add gap between header and top of page
+ - inline search input and search button and center
+ - two column layout: left: hero, status (row no wrap), daily forecast (row no wrap); right: hourly forecast (column)
+*/
+
 :host {
   max-width: 100%;
   display: flex;
@@ -306,4 +313,84 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-150);
+}
+
+@media screen and (min-width: 768px) {
+  :host {
+    padding-top: var(--spacing-300);
+    padding-left: var(--spacing-300);
+    padding-right: var(--spacing-300);
+    padding-bottom: var(--spacing-1000);
+  }
+
+  .header {
+    height: 43px;
+  }
+
+  .headline {
+    width: 482px;
+  }
+
+  .search {
+    flex-direction: row;
+    gap: var(--spacing-200);
+  }
+
+  .weather-info {
+    background-image: url('/weather/assets/images/bg-today-large.svg');
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .weather-info-location-container {
+    align-items: flex-start;
+  }
+
+  .weather-info-temperature-container {
+    gap: var(--spacing-250);
+  }
+
+  .weather-details-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .daily-forecast-days-container {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :host {
+    padding-top: var(--spacing-600);
+    padding-left: var(--spacing-1400);
+    padding-right: var(--spacing-1400);
+    padding-bottom: var(--spacing-1000);
+  }
+
+  .header {
+    height: 43px;
+  }
+
+  .headline {
+    width: 100%;
+  }
+
+  .search {
+    width: 656px;
+  }
+
+  .weather-info-container {
+    margin-top: unset;
+    gap: var(--spacing-400);
+  }
+
+  .weather-container {
+    display: flex;
+    gap: var(--spacing-400);
+    width: 100%;
+  }
+
+  .hourly-forecast {
+    margin-top: 26px;
+  }
 }
